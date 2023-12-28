@@ -10,4 +10,8 @@
     <ProjectReference Include="..\HealthPets.Application\HealthPets.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.14" />
+  </ItemGroup>
+
 </Project>
