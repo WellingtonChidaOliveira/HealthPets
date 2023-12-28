@@ -2,8 +2,8 @@
 
 namespace HealthPets.Domain.Abstractions
 {
-    public interface IPetRepository : IBaseRepository<Pets>
+    public interface IPetRepository : IBaseRepository<Pet>
     {
-        Task<Pets> GetByNameAsync(string name);
+        Task<Pet> GetByNameAsync(string name, CancellationToken cancellationToken);
     }
 }

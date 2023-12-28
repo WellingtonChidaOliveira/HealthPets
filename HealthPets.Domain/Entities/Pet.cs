@@ -1,7 +1,7 @@
 ﻿namespace HealthPets.Domain.Entities
 {
     //anemic class, but should be a rich domain class
-    public sealed class Pets : BaseEntity
+    public sealed class Pet : BaseEntity
     {
         public string Name { get; set; }
         public string Breed { get; set; }

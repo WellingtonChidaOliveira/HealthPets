@@ -13,15 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "presentation", "presentation", "{20E2E08E-9EB9-4B2A-8AFD-EC8DE9347280}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthPets.Application", "HealthPets.Application\HealthPets.Application.csproj", "{0F757EFF-B885-4919-BF20-C4C6EE503B8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthPets.Application", "HealthPets.Application\HealthPets.Application.csproj", "{0F757EFF-B885-4919-BF20-C4C6EE503B8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthPets.Domain", "HealthPets.Domain\HealthPets.Domain.csproj", "{E9FE380A-63CD-4AED-8BC5-5EC499960C45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthPets.Domain", "HealthPets.Domain\HealthPets.Domain.csproj", "{E9FE380A-63CD-4AED-8BC5-5EC499960C45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthPets.Infrastructure", "HealthPets.Infrastructure\HealthPets.Infrastructure.csproj", "{D86A0140-A994-4D8E-9E0A-0A1929CEAE0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthPets.Infrastructure", "HealthPets.Infrastructure\HealthPets.Infrastructure.csproj", "{D86A0140-A994-4D8E-9E0A-0A1929CEAE0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthPets.Api", "Healthpets.Api\HealthPets.Api.csproj", "{1ACB6527-3B08-40DE-86FE-D5A872844F17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthPets.Api", "Healthpets.Api\HealthPets.Api.csproj", "{1ACB6527-3B08-40DE-86FE-D5A872844F17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelathPets.Test", "HelathPets.Test\HelathPets.Test.csproj", "{024C6763-86F6-460F-B8FD-48624BDE4FBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelathPets.Test", "HelathPets.Test\HelathPets.Test.csproj", "{024C6763-86F6-460F-B8FD-48624BDE4FBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
