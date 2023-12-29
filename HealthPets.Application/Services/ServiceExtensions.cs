@@ -1,11 +1,8 @@
 ﻿using FluentValidation;
+using HealthPets.Application.Shared.Behavior;
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HealthPets.Application.Services
 {
@@ -18,6 +15,8 @@ namespace HealthPets.Application.Services
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
+
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
         }
     }
 }

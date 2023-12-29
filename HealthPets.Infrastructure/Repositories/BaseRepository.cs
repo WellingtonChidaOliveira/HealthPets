@@ -39,7 +39,7 @@ namespace HealthPets.Infrastructure.Repositories
            return await _context.Set<T>().ToListAsync(cancellationToken);
         }
 
-        public async Task<T> GetByIdAsync(Ulid id, CancellationToken cancellationToken)
+        public async Task<T> GetByIdAsync(Guid id, CancellationToken cancellationToken)
         {
             var pet = await _context.Set<T>().FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
             return pet?? throw new Exception("Pet not found");

@@ -9,11 +9,11 @@ namespace HealthPets.Infrastructure
 {
     public static class ServiceExtensions
     {
-        public static void AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
+        public static void ConfigurePersistenceApp(this IServiceCollection services, IConfiguration configuration)
         {
             var connectionString = configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<AppDbContext>(options =>
-                           options.UseSqlite(connectionString));
+                           options.UseSqlServer(connectionString));
 
             services.AddScoped<IPetRepository, PetRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
