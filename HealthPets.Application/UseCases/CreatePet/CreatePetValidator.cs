@@ -27,6 +27,8 @@ namespace HealthPets.Application.UseCases.CreatePet
             RuleFor(pet => pet.Owner)
                 .NotEmpty()
                 .WithMessage("The owner is required")
+                .MinimumLength(3)
+                .WithMessage("The owner must be more than or equal 3 characters")
                 .MaximumLength(100)
                 .WithMessage("The owner must be less than 100 characters");
 
