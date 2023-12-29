@@ -7,14 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="UseCases\GetAllPet - Copy\**" />
+    <EmbeddedResource Remove="UseCases\GetAllPet - Copy\**" />
+    <None Remove="UseCases\GetAllPet - Copy\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\HealthPets.Domain\HealthPets.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Shared\Exceptions\" />
-    <Folder Include="UseCases\DeletePet\" />
-    <Folder Include="UseCases\GetAllPet\" />
-    <Folder Include="UseCases\UpdatePet\" />
   </ItemGroup>
 
   <ItemGroup>
